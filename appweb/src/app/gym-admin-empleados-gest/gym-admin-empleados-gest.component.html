@@ -1,0 +1,31 @@
+<div class=" container fondo">
+
+    <h1>lista de Empleados</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+              <th>Cedula</th>
+              <th>Instructor</th>
+              <th>Puesto</th>
+              <th>Sucursal</th>
+              <th>Tipo de pago</th>
+              <th>Tipo de pago</th>
+              <th>Tipo de pago</th>
+              <th>Tipo de pago</th>
+
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let Empleado of Empleados">
+            <td>{{ Empleado.cedula }}</td>
+            <td>{{ Empleado.instructor}}</td>
+            <td>{{Empleado.puesto }}</td>
+            <td>{{ Empleado.sucursal}}</td>
+            <td>{{ Empleado.tipo_de_pago}}</td>
+            <td>{{ Empleado.correo}}</td>
+            <td>{{ Empleado.passw}}</td>
+            <td>{{ Empleado.salario}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

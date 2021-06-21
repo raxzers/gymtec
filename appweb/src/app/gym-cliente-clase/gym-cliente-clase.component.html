@@ -1,0 +1,29 @@
+<div class=" container fondo">
+  
+    <h3>Selecionar Gimnasio:</h3>
+    <select name="miselect" >
+      <option>---</option>
+      <option [value]="item" *ngFor="let item of lista">{{item.nombre}}</option>
+      </select>
+    <h1>lista de clases</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+              <th>Tipo de clase</th>
+              <th>Instructor</th>
+              <th>Fecha Inicio</th>
+              <th>Fecha Fin</th>
+              <th>Cupos Disponibles</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let clase of clases">
+            <td>{{ clase.tipo_de_clase }}</td>
+            <td>{{ clase.instructor}}</td>
+            <td>{{ clase.fecha_Inicio }}</td>
+            <td>{{ clase.fecha_Fin }}</td>
+            <td>{{ clase.cupos_Disponibles}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
